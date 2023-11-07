@@ -1,0 +1,86 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the content on the page */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the page title */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Style navigation links */
+a {
+    text-decoration: none;
+    color: #007BFF;
+    margin-right: 10px;
+}
+
+/* Style task list */
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Add hover effect to task list items */
+li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Style form elements */
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add space between buttons */
+button, input[type="submit"] {
+    margin-right: 10px;
+}
+
+/* Style links for editing, marking, and deleting tasks */
+.edit-link, .mark-link, .delete-link {
+    text-decoration: none;
+    margin-left: 5px;
+    color: #333;
+}
+
+/* Style links for editing, marking, and deleting tasks on hover */
+.edit-link:hover, .mark-link:hover, .delete-link:hover {
+    color: #007BFF;
+}
