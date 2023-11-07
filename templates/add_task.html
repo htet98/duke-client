@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Task</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Add Task</h1>
+    <form method="post">
+        <label for="description">Task Description:</label>
+        <input type="text" id="description" name="description" required>
+        <br>
+        <label for="deadline">Deadline (if applicable):</label>
+        <input type="text" id="deadline" name="deadline">
+        <br>
+        <label for="start_time">Start Time (if applicable):</label>
+        <input type="text" id="start_time" name="start_time">
+        <br>
+        <label for="end_time">End Time (if applicable):</label>
+        <input type="text" id="end_time" name="end_time">
+        <br>
+        <input type="submit" value="Add Task">
+    </form>
+    <a href="{{ url_for('index') }}">Back to Task List</a>
+</body>
+</html>
